@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .cat,
+    .cat2,
+    .dog {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      cursor: pointer;
+    }
+
+    .sidebar-pfp {
+      background-color: #1b1c1e;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar-text {
+      width: 300px;
+      background-color: #2b2c31;
+      position: fixed;
+      top: 0;
+      left: 90px;
+      bottom: 0;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      color: #cecfce;
+      margin-top: 25px;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    .bottom {
+      color: #787879;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-left: 25px;
+    }
+  </style>
+  <body>
+    <div class="sidebar-pfp">
+      <img
+        src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course/refs/heads/main/1-exercise-solutions/lesson-14/cat.jpg"
+        class="cat"
+      />
+
+      <img
+        src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course/refs/heads/main/1-exercise-solutions/lesson-14/cat2.jpg"
+        class="cat2"
+      />
+
+      <img
+        src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course/refs/heads/main/1-exercise-solutions/lesson-14/dog.jpg"
+        class="dog"
+      />
+    </div>
+    <div class="sidebar-text">
+      <div class="top">
+        <h3 class="info-text">INFO</h3>
+        <h3 style="cursor: pointer">+</h3>
+      </div>
+      <div class="bottom">
+        <p style="cursor: pointer">#new-videos</p>
+        <p style="cursor: pointer">#updates</p>
+        <p style="cursor: pointer">#faq</p>
+      </div>
+    </div>
+  </body>
+</html>
